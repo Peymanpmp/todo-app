@@ -29,6 +29,7 @@ function App() {
   const removeTodo = (id) => {
     let updatedTodos = [...todos].filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedTodos));
   };
 
   const completeTodo = (id) => {
@@ -39,6 +40,7 @@ function App() {
       return todo;
     });
     setTodos(updatedTodos);
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedTodos));
   };
 
   const unCompleteTodo = (id) => {
@@ -49,6 +51,7 @@ function App() {
       return todo;
     });
     setTodos(updatedTodos);
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedTodos));
   };
 
   return (
