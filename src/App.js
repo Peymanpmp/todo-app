@@ -3,7 +3,7 @@ import "./App.css";
 import TodoForm from "./components/TodoForm";
 import TodoItem from "./components/TodoItem";
 
-const LOCAL_STORAGE_KEY = 'react-todo-list-todos'
+const LOCAL_STORAGE_KEY = "react-todo-list-todos";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const storageTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storageTodos) {
-      setTodos(storageTodos)
+      setTodos(storageTodos);
     }
   }, []);
 

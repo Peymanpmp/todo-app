@@ -10,6 +10,7 @@
 body {
   background-color: #fff;
 }
+
 .todo-app {
   display: flex;
   flex-direction: column;

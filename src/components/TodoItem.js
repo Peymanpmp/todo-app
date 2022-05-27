@@ -1,8 +1,4 @@
 import React from "react";
-import { BsCircle } from "react-icons/bs";
-import { BsCheckCircle } from "react-icons/bs";
-//
-//import { AiOutlineDelete } from "react-icons/ai";
 
 export default function TodoItem(props) {
   const { todo, removeTodo, completeTodo, unCompleteTodo } = props;
