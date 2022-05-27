@@ -35,6 +35,7 @@ body {
 .complete {
   text-decoration: line-through;
   color: #b8b8b8 !important;
+  float: left;
 }
 
 .todo-form {
@@ -150,4 +151,8 @@ body {
   color: #ff5b5b;
   text-transform: capitalize;
   float: left;
+}
+
+.icon-minus {
+  color: #b8b8b8;
 }
